@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #3f51b5;
+  padding: 1% 0;
+  text-align: left;
+}
+
+.navbar-username {
+  display: inline;
+  position: absolute;
+  right: 0;
+  margin: auto 1%;
+}
+
+.logout {
+  display: inline;
+}

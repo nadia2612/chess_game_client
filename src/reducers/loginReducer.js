@@ -1,19 +1,19 @@
-import { LOGGED_IN, LOG_OUT } from '../actions'
+import { LOGGED_IN, LOG_OUT } from "../actions";
 
 const initialState = {
- 
-  email:'',
-  jwt: ''
-}
+  username: "",
+  email: "",
+  jwt: ""
+};
 
-export default function (state = initialState, action) {
+export default function(state = initialState, action) {
   switch (action.type) {
     case LOGGED_IN:
-      const { email, jwt } = action.payload
-      return { email, jwt }
+      const { username, email, jwt } = action.payload;
+      return { username, email, jwt };
     case LOG_OUT:
-      return {  email:'',jwt: '' }
+      return { username: "", email: "", jwt: "" };
     default:
-      return state
+      return state;
   }
 }

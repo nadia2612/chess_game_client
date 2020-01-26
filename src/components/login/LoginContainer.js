@@ -5,7 +5,7 @@ import { sendLogin } from '../../actions'
 
 class LoginContainer extends Component {
   state = {
-    
+    username:'',
     email:'',
     password: ''
   }
@@ -14,8 +14,8 @@ class LoginContainer extends Component {
   }
   onSubmit = event => {
     event.preventDefault()
-    this.props.dispatch(sendLogin(this.state.email, this.state.password, this.props.history.push))
-    this.setState({ email:'',password: '' })
+    this.props.dispatch(sendLogin(this.state.username,this.state.email, this.state.password, this.props.history.push))
+    this.setState({ username:'',email:'',password: '' })
   }
   render() {
     return (
