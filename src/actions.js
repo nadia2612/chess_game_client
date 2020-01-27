@@ -43,3 +43,54 @@ export const LOG_OUT = "LOG_OUT";
 export const logOut = () => ({
   type: LOG_OUT
 });
+
+
+export const SAVE_GAMES = 'SAVE_GAMES'
+
+function saveGames(games) {
+  return {
+    type: SAVE_GAMES,
+    payload: games
+  }
+}
+
+export const getAllGames = () => dispatch => {
+  request
+    .get(`${baseUrl}/game`)
+    .then(response => {
+      dispatch(saveGames(response.body))
+    })
+    .catch(console.error)
+}
+
+export const createGame = (username, push) => dispatch => {
+  const data = { name: username }
+  request
+    .post(`${baseUrl}/game`)
+    .send(data)
+    .then(response => {
+      dispatch(getAllGames())
+      if (push) {
+        push('/')
+      }
+    })
+}
+
+export const SAVE_USERS = 'SAVE_USERS'
+
+function saveUsers(users) {
+  return {
+    type: SAVE_USERS,
+    payload: users
+  }
+}
+
+export const getAllUsers = () => dispatch => {
+  request
+    .get(`${baseUrl}/user`)
+    .then(response => {
+      const users = response.body.map(user => ({ id: user.id, name: user.name }))
+      dispatch(saveUsers(users))
+    })
+    .catch(console.error)
+}
