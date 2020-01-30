@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Gamelist from './Gamelist'
 import { connect } from 'react-redux'
-import { joinGame} from '../actions'
+import { joinGame} from '../../actions'
 
 class GamelistContainer extends Component {
   joinHandle = (id, color) => {

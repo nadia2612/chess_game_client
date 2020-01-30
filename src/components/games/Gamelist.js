@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { Link } from 'react-router-dom'
-import assignPlayers from '../assignPlayer'
+import playerAssigner from '../../playerAssigner'
 import {useStyles} from "./styles"
 
 
@@ -30,10 +30,10 @@ export default function Gamelist(props) {
                       Game number: {game.id}
                     </Typography>
                     <Typography gutterBottom variant="h5" component="h2">
-                      White player: {assignPlayers(game)['white']}
+                      White player: {playerAssigner(game)['white']}
                     </Typography>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Black player: {assignPlayers(game)['black']}
+                      Black player: {playerAssigner(game)['black']}
                     </Typography>
                   </CardContent>
                 </Card>
