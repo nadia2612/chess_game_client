@@ -25,6 +25,7 @@ function Chessboard(props) {
                         key={indexRow * 8 + indexColumn + 100}
                         className="piece-img"
                         src={square.imgsrc}
+                        alt="square"
                       />
                     )}
                   </div>
@@ -39,6 +40,7 @@ function Chessboard(props) {
                         key={indexRow * 8 + indexColumn + 100}
                         className="piece-img"
                         src={square.imgsrc}
+                        alt="square"
                       />
                     )}
                   </div>

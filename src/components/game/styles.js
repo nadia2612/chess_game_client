@@ -1,3 +1,4 @@
+import Image from "../../images/Wood-werzalit-square.jpg"
 import { makeStyles } from '@material-ui/core/styles';
 export const useStyles = makeStyles(theme => ({
   cardGrid: {
@@ -14,5 +15,9 @@ export const useStyles = makeStyles(theme => ({
   },
   cardContent: {
     flexGrow: 1,
+  },
+  button:{
+    backgroundImage: `url(${Image})`,
+
   }
 }));

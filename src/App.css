@@ -2,6 +2,7 @@
   text-align: center;
   font-family: "Lato", sans-serif;
   align-items: center;
+  background-image: linear-gradient(#fffffe, #7d5d44);
 }
 
 .gamelist-container {
@@ -13,3 +14,24 @@
   display: inline-block;
   width: 50%;
 }
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-fullWidth{
+  background-image: url("./images/Wood-werzalit-square.jpg");
+}
+
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-4 {
+  align-items: center;
+  display: contents;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+}
+
+/* html, body, #root, .App, .App main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+} */
+

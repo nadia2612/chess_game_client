@@ -33,9 +33,15 @@
 .board {
   border: solid;
   padding-top: 3vw;
+  margin-bottom:3vw;
   display: inline-block;
   width: 54vw;
   height: 54vw;
   background-image: url("../../images/board.jpg");
+}
+.chessboard{
+  background-image: linear-gradient(#fffffe, #7d5d44);
+
+  /* background-image: url("../../images/fon.jpg"); */
 }
 

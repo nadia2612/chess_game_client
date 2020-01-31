@@ -5,7 +5,7 @@ import LoginContainer from "./components/login/LoginContainer";
 import SignupContainer from "./components/signup/SignupContainer";
 import NavbarContainer from "./components/navbar/NavbarContainer";
 import Footer from "./components/footer/Footer";
-import Homepage from "./components/Homepage";
+import Homepage from "./components/homepage/Homepage";
 import { connect } from "react-redux";
 import "./App.css";
 class App extends React.Component {
