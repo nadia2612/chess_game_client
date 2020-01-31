@@ -1,0 +1,47 @@
+.square {
+  display: inline-block;
+  width: 6vw;
+  height: 6vw;
+  z-index: 2;
+}
+
+.square-black {
+  display: inline-block;
+  width: 6vw;
+  height: 6vw;
+  background-image: url("../../images/background.jpg");
+  z-index: 2;
+}
+
+.square-white {
+  display: inline-block;
+  width: 6vw;
+  height: 6vw;
+  background-image: url("../../images/Wood-werzalit-square.jpg");
+}
+
+.chessboard-row {
+  height: 6vw;
+}
+
+.piece-img {
+  width: 6vw;
+  height: 6vw;
+  z-index: 1;
+  opacity: 1;
+}
+.board {
+  border: solid;
+  padding-top: 3vw;
+  margin-bottom:3vw;
+  display: inline-block;
+  width: 54vw;
+  height: 54vw;
+  background-image: url("../../images/board.jpg");
+}
+.chessboard{
+  background-image: linear-gradient(#fffffe, #7d5d44);
+
+  /* background-image: url("../../images/fon.jpg"); */
+}
+

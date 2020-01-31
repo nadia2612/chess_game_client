@@ -1,38 +1,37 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-family: "Lato", sans-serif;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: linear-gradient(#fffffe, #7d5d44);
 }
 
-.App-link {
-  color: #61dafb;
+.gamelist-container {
+  display: inline-block;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userlist-container {
+  display: inline-block;
+  width: 50%;
 }
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-fullWidth{
+  background-image: url("./images/Wood-werzalit-square.jpg");
+}
+
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-4 {
+  align-items: center;
+  display: contents;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+}
+
+/* html, body, #root, .App, .App main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+} */
+
