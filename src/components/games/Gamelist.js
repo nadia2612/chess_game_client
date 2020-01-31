@@ -44,7 +44,7 @@ export default function Gamelist(props) {
                           Game number: {game.id}
                         </Typography>
                         <div>
-                          <img src={Wking} alt="White king" />
+                          <img className={classes.icon} src={Wking} alt="White king" />
                           <Typography
                             className={classes.crown}
                             gutterBottom
@@ -53,7 +53,11 @@ export default function Gamelist(props) {
                           >
                             {playerAssigner(game)["white"]}
                           </Typography>
-                          <img src={Bking} alt="Black king" />
+                          <img
+                            className={classes.icon}
+                            src={Bking}
+                            alt="Black king"
+                          />
                           <Typography
                             className={classes.crown}
                             gutterBottom

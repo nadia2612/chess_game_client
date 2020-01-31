@@ -32,16 +32,16 @@ function Navbar(props) {
       {!props.user.username && (
         <Link style={{ color: "white" }} className="logoin" to="/login">
           {" "}
-          Login
+          LOGIN
         </Link>
       )}
       {props.user.username && (
         <div className="logout" onClick={props.onClick}>
-          <Link to="/" style={{ color: "white" }}>Logout</Link>
+          <Link to="/" style={{ color: "white" }}>LOGOUT</Link>
         </div>
       )}
       {props.user.username && (
-        <p className="navbar-username" style={{ color: "white" }}>Logged in as:{props.user.username}</p>
+        <p className="navbar-username" style={{ color: "white" }}>Logged in as: {props.user.username}</p>
       )}
     </div>
   );

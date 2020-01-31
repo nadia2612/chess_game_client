@@ -31,5 +31,9 @@ export const useStyles = makeStyles(theme => ({
     alignItems: "center",
     marginTop: "0px",
     marginBottom: "0px"
+  },
+  icon:{
+    width:"35px",
+    
   }
 }));
