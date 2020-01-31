@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import "./styles.css";
 import { useStyles } from "./styles";
 import SvgIcon from "@material-ui/core/SvgIcon";
-import Chip from "@material-ui/core/Chip";
-import FaceIcon from "@material-ui/icons/Face";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import Fade from "@material-ui/core/Fade";
+
 
 function HomeIcon(props) {
   return (
@@ -19,9 +15,6 @@ function HomeIcon(props) {
 
 function Navbar(props) {
   const classes = useStyles();
-
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
 
   return (
     <div className="navbar">

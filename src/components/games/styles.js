@@ -1,19 +1,23 @@
 import { makeStyles } from "@material-ui/core/styles";
+import Image from "../../images/Wood-werzalit-square.jpg"
 
 export const useStyles = makeStyles(theme => ({
   cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8)
+    padding: theme.spacing(3),
+    paddingBottom: theme.spacing(3)
   },
   card: {
-    height: "100%",
+    height: "95%",
     display: "flex",
+    flexWrap:"wrap",
     flexDirection: "column",
     paddingBottom: "0px",
-  marginBottom: "0px"
+    marginBottom: "0px",
+    backgroundColor: "#d7c3aa"
+    // backgroundImage: `url(${Image})`,
   },
   cardMedia: {
-    paddingTop: "56.25%"
+    paddingTop: "46.25%"
   },
   cardContent: {
     flexGrow: 1,
@@ -21,9 +25,9 @@ export const useStyles = makeStyles(theme => ({
     marginBottom: "0px"
   },
   media: {
-    height: 240,
+    height: 200,
     margin: "3%",
-    marginBottom: "0px"
+    marginBottom: "0px",
   },
   crown: {
     textAlign: "center",
@@ -32,8 +36,7 @@ export const useStyles = makeStyles(theme => ({
     marginTop: "0px",
     marginBottom: "0px"
   },
-  icon:{
-    width:"35px",
-    
+  icon: {
+    width: "35px"
   }
 }));

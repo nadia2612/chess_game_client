@@ -19,9 +19,9 @@ class LoginContainer extends Component {
   }
   render() {
     return (
-      <div>
+      <>
         <Login onChange={this.onChange} onSubmit={this.onSubmit} />
-      </div>
+      </>
     );
   }
 }

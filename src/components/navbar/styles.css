@@ -1,5 +1,7 @@
 .navbar {
-  background-image: url("../../images/Wood-werzalit-square.jpg");
+  
+  background-color: #d7c3aa;
+  /* background-image: url("../../images/Wood.jpg"); */
   padding: 2% 0;
   padding-top: 2%;
   padding-right: 3%;

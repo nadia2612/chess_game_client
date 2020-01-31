@@ -5,14 +5,15 @@ function Chessboard(props) {
   return (
     <div className="chessboard">
       <br />
-      {props.whoseTurnIsIt && <h3>Whose turn is it? {props.whoseTurnIsIt}</h3>}
+      {props.whoseTurnIsIt && <h3>It's {props.whoseTurnIsIt}'s turn</h3>}
       {props.errors.notYourMove && props.errors.notYourMove}
       {props.errors.invalidMove && props.errors.invalidMove}
       {props.errors.isCheck && <h1>{props.errors.isCheck}</h1>}
       <div className="board">
         {props.board.map((row, indexRow) => {
           return (
-            <div className="chessboard-row">
+           
+            <div  key={indexRow} className="chessboard-row">
               {row.map((square, indexColumn) =>
                 (indexRow + indexColumn) % 2 === 1 ? (
                   <div
