@@ -28,7 +28,7 @@ export default function Gamelist(props) {
             props.games
               .sort((a, b) => a.id - b.id)
               .map(game => (
-                <Grid item key={game.id} xs={12} sm={6} md={6}>
+                <Grid item key={game.id} xs={4}>
                   <Link
                     to={`/game/${game.id}`}
                     style={{ textDecoration: "none" }}
@@ -44,7 +44,11 @@ export default function Gamelist(props) {
                           Game number: {game.id}
                         </Typography>
                         <div>
-                          <img src={Wking} alt="White king" />
+                          <img
+                            className={classes.icon}
+                            src={Wking}
+                            alt="White king"
+                          />
                           <Typography
                             className={classes.crown}
                             gutterBottom
@@ -53,7 +57,11 @@ export default function Gamelist(props) {
                           >
                             {playerAssigner(game)["white"]}
                           </Typography>
-                          <img src={Bking} alt="Black king" />
+                          <img
+                            className={classes.icon}
+                            src={Bking}
+                            alt="Black king"
+                          />
                           <Typography
                             className={classes.crown}
                             gutterBottom

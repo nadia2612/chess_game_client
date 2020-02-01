@@ -6,6 +6,8 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import assignPlayers from "../../playerAssigner";
 import { useStyles } from "./styles";
+import Bking from "../../images/King_black.png";
+import Wking from "../../images/King_white.png";
 
 function checkIfThereIsAPlayer(game, color) {
   if (game.users) {
@@ -25,7 +27,7 @@ function checkIfThereIsAPlayer(game, color) {
 function GameDetailPage(props) {
   const classes = useStyles();
   return (
-    <div>
+    <>
       {props.games.reduce((acc, game) => {
         if (game.id === parseInt(props.pageID)) {
           acc = (
@@ -35,10 +37,20 @@ function GameDetailPage(props) {
                   Hello this is game number {game.id}
                 </Typography>
                 <Typography gutterBottom variant="h5" component="h2">
-                  White player: {assignPlayers(game)["white"]}
+                <img
+                            className={classes.icon}
+                            src={Wking}
+                            alt="White king"
+                          />
+                  {assignPlayers(game)["white"]}
                 </Typography>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Black player: {assignPlayers(game)["black"]}
+                <img
+                            className={classes.icon}
+                            src={Bking}
+                            alt="Black king"
+                          />
+                  {assignPlayers(game)["black"]}
                 </Typography>
               </CardContent>
               {!checkIfThereIsAPlayer(game, "white") && props.user.jwt && (
@@ -70,7 +82,7 @@ function GameDetailPage(props) {
         }
         return acc;
       }, 0)}
-    </div>
+    </>
   );
 }
 

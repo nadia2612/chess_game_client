@@ -1,8 +1,13 @@
 .App {
+  height: 100%;
   text-align: center;
   font-family: "Lato", sans-serif;
   align-items: center;
-  background-image: linear-gradient(#fffffe, #7d5d44);
+  background-color: #ece7e3;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .gamelist-container {
@@ -14,7 +19,7 @@
   display: inline-block;
   width: 50%;
 }
-.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-fullWidth{
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-fullWidth {
   background-image: url("./images/Wood-werzalit-square.jpg");
 }
 
@@ -26,12 +31,62 @@
 }
 
 html {
-  height: 100%;
+  height: 95%;
+  background-color: #ece7e3;
+  /* display: flex;
+  flex-direction: column;
+  flex-grow: 1; */
+}
+.MuiCardContent-root:last-child.makeStyles-cardContent-15 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+.MuiCardContent-root:last-child.makeStyles-cardContent-202 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
-/* html, body, #root, .App, .App main {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-} */
+.MuiPaper-root.MuiCard-root.MuiPaper-elevation1.MuiPaper-rounded {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.MuiCardContent-root.makeStyles-cardContent-81 {
+  padding: 0px;
+}
+.MuiTypography-root {
+  padding: 0px;
+  margin: 0px;
+}
+.MuiGrid-root {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+.MuiCardContent-root {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.MuiContainer-root {
+  margin-bottom: 3%;
+}
+.MuiTypography-root.MuiTypography-h5.MuiTypography-gutterBottom {
+  margin-bottom: 0px;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0px;
+}
 
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-4 {
+  padding-bottom: 0px;
+}
+body,
+#root,
+main {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #ece7e3;
+}

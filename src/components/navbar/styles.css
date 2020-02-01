@@ -1,20 +1,15 @@
-/* .navbar {
+.navbar {
   
-  background-image: url("../../images/board.jpg");
-  padding: 1% 0;
-  text-align: left;
-}
-*/
-
-.navbar { 
-  background-image: url("../../images/Wood-werzalit-square.jpg");
+  background-color: #d7c3aa;
+  /* background-image: url("../../images/Wood.jpg"); */
   padding: 2% 0;
   padding-top: 2%;
   padding-right: 3%;
   padding-left: 3%;
   text-align: right;
   display: block;
-  line-height:1
+  font-size: 18px;
+  line-height: 1;
 }
 a:-webkit-any-link {
   color: #3f51b5;
@@ -41,4 +36,5 @@ a:-webkit-any-link {
 }
 
 .logout {
-  display: inline;}
+  display: inline;
+}

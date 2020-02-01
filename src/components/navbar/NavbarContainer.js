@@ -10,9 +10,9 @@ class NavbarContainer extends Component {
   }
   render() {
     return (
-      <div>
+      <>
         <Navbar user={this.props.user} onClick={this.onClick} />
-      </div>
+      </>
     );
   }
 }

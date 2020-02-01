@@ -9,9 +9,9 @@ class GamelistContainer extends Component {
   }
   render() {
     return (
-      <div className="gamelist-container">
+      <>
         <Gamelist games={this.props.games} onClick={this.joinHandle} />
-      </div>
+      </>
     );
   }
 }

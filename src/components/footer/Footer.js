@@ -26,7 +26,7 @@ export default function Footer() {
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom></Typography>
         <Typography variant="subtitle1" align="center" component="p">
-          Made by Nadia at Codaisseur #33
+          Made by Nadia
         </Typography>
         <Copyright />
       </footer>

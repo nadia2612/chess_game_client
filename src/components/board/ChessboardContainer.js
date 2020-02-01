@@ -79,8 +79,6 @@ class ChessboardContainer extends Component {
   }
   onClick = piece => {
     if (this.props.user.jwt) {
-      console.log("clicked!", piece);
-      console.log("hasbeenselected", this.state.hasSelected);
       if (!this.state.hasSelected && piece["type"] !== null) {
         this.setState({
           hasSelected: true,
@@ -115,14 +113,14 @@ class ChessboardContainer extends Component {
   };
   render() {
     return (
-      <div>
+      <>
         <Chessboard
           board={this.state.board}
           onClick={this.onClick}
           errors={this.props.errors}
           whoseTurnIsIt={this.state.whoseTurnIsIt}
         />
-      </div>
+      </>
     );
   }
 }
