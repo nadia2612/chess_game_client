@@ -9,7 +9,8 @@ import Homepage from "./components/homepage/Homepage";
 import { connect } from "react-redux";
 import "./App.css";
 class App extends React.Component {
-  url = "http://localhost:4000";
+  // url = "http://localhost:4000";
+url='https://chess-game-1.herokuapp.com'
   stream = new EventSource(`${this.url}/stream`);
   componentDidMount() {
     this.stream.onmessage = event => {
