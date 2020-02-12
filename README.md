@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Multipalayer Chess game 
 
-## Available Scripts
+## [Check out the deployed version here !](https://lets-play-chess.netlify.com/)
+This is a client part of Multiplayer chess game
+This application provides a convenient a convenient way to playing chess online.
 
-In the project directory, you can run:
+A backend part can be found [here](https://github.com/nadia2612/chess_game_server)
 
-### `yarn start`
+## Overview 
+###  List of games
+<img width="1642" alt="Screenshot 2020-02-01 at 21 44 06" src="https://user-images.githubusercontent.com/54640808/74375676-0da32f00-4de1-11ea-8927-222899cc9ede.png">
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Shows :
+ * List of games. 
+* If you logged in you can create a new game or join an existing game.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Game page
 
-### `yarn test`
+<img width="1653" alt="Screenshot 2020-02-12 at 21 50 38" src="https://user-images.githubusercontent.com/54640808/74376089-ca958b80-4de1-11ea-997c-b01b720f5e6c.png">
+<img width="1642" alt="Screenshot 2020-02-01 at 21 44 56" src="https://user-images.githubusercontent.com/54640808/74375887-6ffc2f80-4de1-11ea-80e9-250e77846e42.png">
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Shows:
+* Join game buttons.
+* After two players joined the game, you can make the first move.
+* On top you can see game-related information like game ID, whose turn it is now and the color of players.
+* Every step is validated and an appropriate validation message is shown if player is trying to make the wrong turn.
 
-### `yarn build`
+<img width="1642" alt="Screenshot 2020-02-01 at 22 50 03" src="https://user-images.githubusercontent.com/54640808/74378481-53162b00-4de6-11ea-9a3a-c7ec387ef1ca.png">
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Authentication
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+It is possible to register a new user and log in with an existing one.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies used
 
-### `yarn eject`
+This application is built using the following libraries:
+-  React
+-  React-router
+-  Redux
+- Redux-thunk
+- Superagent
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##  Spinning up
+To spin up a local version of this application please follow the following instructions: 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  Clone the project  
+    `$ git clone git@github.com:nadia2612/chess_game_client.git`
+2. `$ cd chess_game_client`
+2.  Run `npm install`
+3. The frontend sends requests to the backend deployed to [Heroku](https://chess-game-1.herokuapp.com).
+If you want to install the backend for this app locally
+clone this [repo](https://github.com/nadia2612/chess_game_server) and follow the instructions to spin up the server.
+Change `baseUrl` in '/src/actions.js' and `url` in  'src/App.js' in the frontend to your local sever's URL
+4.  Start the client using `npm run start`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
